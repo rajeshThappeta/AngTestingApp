@@ -1,6 +1,11 @@
+<div class="text-center">
+    <h5 class="text-light">No of products selected: {{productCount}}</h5>
+    <span *ngFor="let title of  productsSentByChild" class="text-white">{{title }},</span>
+</div>
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5">
-    <div class="col" *ngFor="let p of products">
-        <app-product-details></app-product-details>
+    <div class="col" *ngFor="let prObj of products">
+        <app-product-details [productObj]=prObj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
     </div>
 
 </div>
