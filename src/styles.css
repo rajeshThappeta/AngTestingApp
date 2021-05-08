@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 body{
-    background-image: url('assets/bg-4.svg');
+    background-image: url('assets/bg-2.svg');
     background-size: 100% 100%;
     background-attachment: fixed;
+
+    
 }
 
