@@ -1,0 +1,14 @@
+li{
+    background-color: #d81b60;
+    
+}
+
+li a{
+    color:white;
+}
+
+
+active{
+    background-color: goldenrod;
+    
+}
