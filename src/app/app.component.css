@@ -2,15 +2,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .active{
     font-weight: bold;
-   
-}
-
-nav li a{
-   color:white;
-}
-
-nav li a:focus{
-    color:yellow;
 }
