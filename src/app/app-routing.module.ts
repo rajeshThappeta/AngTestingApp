@@ -9,6 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
+import { TestComponent } from './test/test.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path:'register',component:RegisterComponent},
   { path:'login',component:LoginComponent},
   { path:'contactus',component:ContactusComponent},
+  {path:'test',component:TestComponent},
   { path:'products',component:ProductsComponent,children:[
     {path:'mobiles',component:MobilesComponent},
     { path:"bikes",component:BikesComponent},

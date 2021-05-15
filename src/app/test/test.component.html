@@ -1,0 +1,19 @@
+<table class="table text-white text-center">
+    <thead>
+        <tr>
+
+            <th>ID</th>
+            <th>Email</th>
+            <th>Profile pic</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let postObj of users.data">
+            <td>{{postObj.id}}</td>
+            <td>{{postObj.email}}</td>
+            <td><img src={{postObj.avatar}} alt=""></td>
+
+        </tr>
+    </tbody>
+</table>
