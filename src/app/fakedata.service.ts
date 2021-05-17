@@ -16,7 +16,7 @@ export class FakedataService {
   }
 
 
-  getUsers():Observable<any>{
-   return this.hc.get<any>("https://reqres.in/api/users?page=2");
-  }
+ getPostById(id):Observable<Post>{
+    return this.hc.get<Post>('https://jsonplaceholder.typicode.com/posts/'+id)
+ }
 }

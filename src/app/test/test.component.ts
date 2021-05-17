@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { FakedataService } from '../fakedata.service';
@@ -17,10 +18,10 @@ export class TestComponent implements OnInit ,OnDestroy{
 
   users;
   //inject Fakedata service object
-  constructor(private fsObj:FakedataService) { }
+  constructor(private fsObj:FakedataService,private router:Router) { }
 
   ngOnInit(): void {
-   this.mySubscription= this.fsObj.getUsers().subscribe(
+   this.mySubscription= this.fsObj.getPosts().subscribe(
       userData=>{
         //assign posts
         this.users=userData;
@@ -34,7 +35,9 @@ export class TestComponent implements OnInit ,OnDestroy{
     )
   }
 
-
+  onSelectId(id){
+    this.router.navigateByUrl('test/'+id)
+  }
 
   ngOnDestroy(){
     this.mySubscription.unsubscribe();
