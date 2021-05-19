@@ -16,6 +16,8 @@ import { TelevisionsComponent } from './televisions/televisions.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { TestComponent } from './test/test.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
+import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
+import { AddnewmobileComponent } from './addnewmobile/addnewmobile.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { UserdetailsComponent } from './userdetails/userdetails.component';
     TelevisionsComponent,
     PagenotfoundComponent,
     TestComponent,
-    UserdetailsComponent
+    UserdetailsComponent,
+    ViewmobilesComponent,
+    AddnewmobileComponent
   ],
   imports: [
     BrowserModule,

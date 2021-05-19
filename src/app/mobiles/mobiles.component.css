@@ -1,0 +1,15 @@
+.active{
+    font-weight: bold;
+}
+
+li a{
+
+    color:white;
+}
+
+
+.active.nav-link{
+    background-color:white;
+    color:purple;
+   
+}

@@ -1,7 +1,19 @@
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-5 mb-5 ">
-    <div class="col" *ngFor="let mobileObj of mobiles">
-        <app-product-details [productObj]=mobileObj ></app-product-details>
-    </div>
+<ul class="nav nav-tabs mt-3 justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link "  routerLink="viewmobiles" routerLinkActive="active">View mobiles</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="addnewmobile" routerLinkActive="active">Add new</a>
+    </li>
+   
+  </ul>
 
-</div>
+
+  <div>
+      <router-outlet></router-outlet>
+  </div>
+
+
+
+
 

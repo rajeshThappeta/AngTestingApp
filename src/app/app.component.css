@@ -6,3 +6,7 @@
 .active{
     font-weight: bold;
 }
+
+li a{
+    color:purple;
+}
