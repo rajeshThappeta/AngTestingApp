@@ -1,43 +1,55 @@
 {
-    "mobiles": [
-        {
-            "id":1,
-          "productTitle": "Samsung",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-          "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
-        },
-        {
-            "id":2,
-          "productTitle": "Samsung",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-          "productImage": "https://priceintanzania.com/wp-content/uploads/2019/04/Samsung-Galaxy-A70-Price-in-Tanzania.jpg"
-        },
-        {
-            "id":3,
-          "productTitle": "Honor",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-          "productImage": "https://5.imimg.com/data5/AW/IX/GLADMIN-53160395/galaxy-s-500x500.png"
-        },
-        {
-            "id":4,
-          "productTitle": "Iphone-11",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-          "productImage": "https://img.tatacliq.com/images/i7/1348Wx2000H/MP000000005562292_1348Wx2000H_202011300234051.jpeg"
-        },
-        {
-            "id":5,
-          "productTitle": "OnePlus",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-          "productImage": "https://670354.smushcdn.com/2260778/wp-content/uploads/2021/03/AMZ101-2.jpg"
-        },
-        {
-            "id":6,
-          "productTitle": "Google pixel",
-          "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-          "productImage": "https://www.91-img.com/pictures/105546-v1-google-pixel-xl-mobile-phone-large-1.jpg"
-        }
-      ],
-      "bikes":[],
-      "televisions":[],
-      "users":[]
+  "mobiles": [
+    {
+      "id": 1,
+      "productTitle": "Samsung",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
+    },
+    {
+      "id": 2,
+      "productTitle": "Samsung",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://priceintanzania.com/wp-content/uploads/2019/04/Samsung-Galaxy-A70-Price-in-Tanzania.jpg"
+    },
+    {
+      "id": 3,
+      "productTitle": "Honor",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://5.imimg.com/data5/AW/IX/GLADMIN-53160395/galaxy-s-500x500.png"
+    },
+    {
+      "id": 4,
+      "productTitle": "Iphone-11",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://img.tatacliq.com/images/i7/1348Wx2000H/MP000000005562292_1348Wx2000H_202011300234051.jpeg"
+    },
+    {
+      "id": 5,
+      "productTitle": "OnePlus",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://670354.smushcdn.com/2260778/wp-content/uploads/2021/03/AMZ101-2.jpg"
+    },
+    {
+      "id": 6,
+      "productTitle": "Google pixel",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "productImage": "https://www.91-img.com/pictures/105546-v1-google-pixel-xl-mobile-phone-large-1.jpg"
+    },
+    {
+      "productTitle": "Vivo",
+      "productImage": "https://assets.gopaisa.com/unsafe/0x0/https://gpcdn.ams3.cdn.digitaloceanspaces.com/deals/honor-9a-price-offers-amazon.jpg",
+      "description": "Amazon Offers Today & Amazon Sale: 80% OFF in The Great Indian Sale 2021 ",
+      "id": 7
+    },
+    {
+      "productTitle": "Nokia",
+      "productImage": "https://assets.mspimages.in/c/tr:w-200,h-320,cm-pad_resize/16666-3-1.jpg",
+      "description": " MyNokia Mobile Price in India | New & Latest Nokia Mobile Phones 2021 20th May Images ",
+      "id": 8
+    }
+  ],
+  "bikes": [],
+  "televisions": [],
+  "users": []
 }

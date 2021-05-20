@@ -31,9 +31,11 @@ const routes: Routes = [
     ]},
     { path:"bikes",component:BikesComponent},
     {path:"televisions",component:TelevisionsComponent},
-    {path:'',redirectTo:'/products/mobiles',pathMatch:'full'}
+    {path:'',redirectTo:'/products/mobiles/viewmobiles',pathMatch:'full'}
   ]},
   { path:'', redirectTo:'/login',pathMatch:'full'},
+  
+  { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   
   {path:'**',component:PagenotfoundComponent}
 ];

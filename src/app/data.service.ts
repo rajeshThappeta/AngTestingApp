@@ -3,6 +3,7 @@ import { Product } from './models/product.model';
 import { ProductsComponent } from './products/products.component';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs'
+import { Mobile } from './models/Mobile.model';
 
 @Injectable({
   providedIn: 'root'
@@ -15,11 +16,15 @@ export class DataService {
   constructor(private hc:HttpClient) { }
 
 
-
-    getMobilesData():Observable<Product[]>{
+  //to read all mobiles data
+    getMobilesData():Observable<Mobile[]>{
         //http get
-       return this.hc.get<Product[]>("http://localhost:3000/mobiles")
+       return this.hc.get<Mobile[]>("http://localhost:3000/mobiles")
     }
   
+    //to save /create new mobile
+    createNewMobile(mobileObj):Observable<any>{
+      return this.hc.post("http://localhost:3000/mobiles",mobileObj)
+    }
 }
 
