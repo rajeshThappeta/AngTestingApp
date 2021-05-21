@@ -10,6 +10,12 @@ import { Mobile } from 'src/app/models/Mobile.model';
 export class ViewproductsComponent implements OnInit {
 
   mobiles:Mobile[]=[];
+  editMobileIndex;
+  editMobileObj=new Mobile('','','')
+  editMobileStatus:boolean=false;
+
+
+
   constructor(private dsObj:DataService) { }
 
   ngOnInit(): void {
@@ -23,4 +29,44 @@ export class ViewproductsComponent implements OnInit {
     )
   }
 
+  //to edit mobile
+  editMobile(mobileObj,ind){
+    this.editMobileObj=mobileObj;
+    this.editMobileIndex=ind;
+    this.editMobileStatus=true;
+
+    console.log('obj to be edited ',this.editMobileObj)
+  }
+
+  //save mobile after edit
+  saveMobile(modifiedMobileObj){
+    this.editMobileStatus=false;
+
+    modifiedMobileObj.id=this.editMobileObj["id"];
+    modifiedMobileObj.productImage=this.editMobileObj["productImage"];
+   
+    this.dsObj.updateMobile(modifiedMobileObj).subscribe(
+      res=>{
+        console.log(res)
+      },
+      err=>{
+        console.log("err in update ",err)
+      }
+    )
+  }
+
+  //delete mobile
+  deleteMobile(mobileObj){
+    console.log("mobile to delete",mobileObj.id)
+    this.dsObj.deleteMobile(mobileObj.id).subscribe(
+      res=>{
+        //write getting latest data from API
+        console.log("res is ",res);
+        alert("Mobile deleted")
+      },
+      err=>{
+        console.log("err in delete mobile",err)
+      }
+    )
+  }
 }

@@ -7,15 +7,9 @@
       "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
     },
     {
-      "id": 2,
-      "productTitle": "Samsung",
+      "productTitle": "Honor v10",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
-      "productImage": "https://priceintanzania.com/wp-content/uploads/2019/04/Samsung-Galaxy-A70-Price-in-Tanzania.jpg"
-    },
-    {
       "id": 3,
-      "productTitle": "Honor",
-      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
       "productImage": "https://5.imimg.com/data5/AW/IX/GLADMIN-53160395/galaxy-s-500x500.png"
     },
     {
@@ -43,10 +37,10 @@
       "id": 7
     },
     {
-      "productTitle": "Nokia",
-      "productImage": "https://assets.mspimages.in/c/tr:w-200,h-320,cm-pad_resize/16666-3-1.jpg",
+      "productTitle": "Nokia new",
       "description": " MyNokia Mobile Price in India | New & Latest Nokia Mobile Phones 2021 20th May Images ",
-      "id": 8
+      "id": 8,
+      "productImage": "https://assets.mspimages.in/c/tr:w-200,h-320,cm-pad_resize/16666-3-1.jpg"
     }
   ],
   "bikes": [],

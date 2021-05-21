@@ -26,5 +26,16 @@ export class DataService {
     createNewMobile(mobileObj):Observable<any>{
       return this.hc.post("http://localhost:3000/mobiles",mobileObj)
     }
+
+    //update mobile
+    updateMobile(modifiedMobileOj):Observable<any>{
+      return this.hc.put("http://localhost:3000/mobiles/"+modifiedMobileOj.id,modifiedMobileOj)
+    }
+
+    //delete mobile
+    deleteMobile(id):Observable<any>{
+      console.log("id is ",id)
+      return this.hc.delete("http://localhost:3000/mobiles/"+id)
+    }
 }
 

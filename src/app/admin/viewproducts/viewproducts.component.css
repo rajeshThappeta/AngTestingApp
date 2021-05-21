@@ -1,0 +1,10 @@
+.table-content{
+    background-image: url("../../../assets/bg-1.jpg");
+    background-size: 100%;
+}
+
+
+input{
+    width:100%;
+    border-radius: 5px;
+}
