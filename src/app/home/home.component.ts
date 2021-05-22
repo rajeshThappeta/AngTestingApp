@@ -9,7 +9,12 @@ import {TestService} from '../test.service'
 export class HomeComponent implements OnInit {
 
 
-  n:number=12345;
+  n:number=5;
+
+  roi=0.12;
+
+  today=new Date();
+
   constructor(private tsObj:TestService) { }
 
   ngOnInit(): void {

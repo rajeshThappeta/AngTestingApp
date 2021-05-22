@@ -7,6 +7,12 @@
       "productImage": "https://www.sathya.in/Media/Default/Thumbs/0038/0038136-vivo-s1-pro-black8gb-ram-128gb-storage-250.jpg"
     },
     {
+      "productTitle": "Samsung123",
+      "description": " ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
+      "id": 2,
+      "productImage": "https://priceintanzania.com/wp-content/uploads/2019/04/Samsung-Galaxy-A70-Price-in-Tanzania.jpg"
+    },
+    {
       "productTitle": "Honor v10",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore amet dolor iusto",
       "id": 3,
@@ -47,3 +53,5 @@
   "televisions": [],
   "users": []
 }
+
+

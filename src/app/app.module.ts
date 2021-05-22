@@ -18,7 +18,9 @@ import { TestComponent } from './test/test.component';
 import { UserdetailsComponent } from './userdetails/userdetails.component';
 import { ViewmobilesComponent } from './viewmobiles/viewmobiles.component';
 import { AddnewmobileComponent } from './addnewmobile/addnewmobile.component';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
+import { SquarePipe } from './square.pipe';
+import { SearchPipe } from './search.pipe'
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import {FormsModule} from '@angular/forms'
     TestComponent,
     UserdetailsComponent,
     ViewmobilesComponent,
-    AddnewmobileComponent
+    AddnewmobileComponent,
+    SquarePipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

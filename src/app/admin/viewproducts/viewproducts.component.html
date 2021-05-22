@@ -10,12 +10,12 @@
                 <tr *ngFor="let mobile of mobiles;let ind=index">
 
                     <!-- product title -->
-                    <td>
+                    <td class="title">
                         <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
-                            {{mobile.productTitle}}
+                            {{mobile.productTitle | uppercase}}
                         </span>
 
-                        <input type="text" name="productTitle"  [(ngModel)]="editMobileObj.productTitle"
+                        <input type="text" name="productTitle" [(ngModel)]="editMobileObj.productTitle"
                             *ngIf="editMobileStatus && editMobileIndex==ind">
 
                     </td>
@@ -25,7 +25,7 @@
                             {{mobile.description}}
                         </span>
 
-                        <input type="text" name="description"  [(ngModel)]="editMobileObj.description"
+                        <input type="text" name="description" [(ngModel)]="editMobileObj.description"
                             *ngIf="editMobileStatus && editMobileIndex==ind">
 
                     </td>
@@ -34,16 +34,19 @@
                     </td>
                     <!-- edit  and delete -->
                     <td>
-                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind">
-                            <button class="btn btn-danger btn-sm p-1 m-1" (click)="editMobile(mobile,ind)"><i
-                                    class="fas fa-edit text-warning"></i></button>
-                            <button class="btn btn-warning btn-sm p-1 m-1"><i
-                                    class="fas fa-trash-alt text-danger" (click)="deleteMobile(mobile)"></i></button>
+                        <span *ngIf="!editMobileStatus || editMobileIndex!==ind" class="d-block">
+                            <button class="btn btn-edit btn-sm p-1 m-1" (click)="editMobile(mobile,ind)" type="button"><i
+                                    class="fas fa-edit "></i>
+                            </button>
+                            <button class="btn btn-delete btn-sm p-1 m-1" (click)="deleteMobile(mobile)" type="button">
+                                <i class="fas fa-trash-alt "></i>
+                            </button>
                         </span>
 
                         <span *ngIf="editMobileStatus && editMobileIndex==ind">
-                            <button class="btn btn-sm btn-success" type="submit"><i
-                                    class="fas fa-save text-white"></i></button>
+                            <button class="btn btn-sm btn-success" type="submit">
+                                <i class="fas fa-save text-white"></i>
+                            </button>
                         </span>
                     </td>
                 </tr>

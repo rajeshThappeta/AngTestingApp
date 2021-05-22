@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
 import { Mobile } from 'src/app/models/Mobile.model';
 
@@ -19,6 +19,12 @@ export class ViewproductsComponent implements OnInit {
   constructor(private dsObj:DataService) { }
 
   ngOnInit(): void {
+    this.getUsers();
+  }
+
+
+  
+  getUsers(){
     this.dsObj.getMobilesData().subscribe(
       res=>{
         this.mobiles=res;
@@ -31,6 +37,8 @@ export class ViewproductsComponent implements OnInit {
 
   //to edit mobile
   editMobile(mobileObj,ind){
+
+   
     this.editMobileObj=mobileObj;
     this.editMobileIndex=ind;
     this.editMobileStatus=true;
@@ -55,13 +63,17 @@ export class ViewproductsComponent implements OnInit {
     )
   }
 
+
+ // @HostListener("click", ["$event"])
+
   //delete mobile
   deleteMobile(mobileObj){
+   
     console.log("mobile to delete",mobileObj.id)
     this.dsObj.deleteMobile(mobileObj.id).subscribe(
       res=>{
         //write getting latest data from API
-        console.log("res is ",res);
+        this.getUsers();
         alert("Mobile deleted")
       },
       err=>{

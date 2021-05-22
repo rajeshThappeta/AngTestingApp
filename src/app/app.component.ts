@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
  
 })
 export class AppComponent {
-  title = 'VnrAngApp2';
+  
+  constructor(public dsObj:DataService){}
 }
